@@ -15,59 +15,6 @@
 get_header();
 ?>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Omnidfood is a premium food delivery services with the mission to bring affordable many people as possible">
-        <title>OmniFood</title>
-
-        <!--  Mobile Specific Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
-
-        <!-- FONT -->
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic' rel='stylesheet' type='text/css'>
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="vendors/css/normalize.css">
-        <link rel="stylesheet" href="vendors/css/grid.css">
-        <link rel="stylesheet" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" href="vendors/css/animate.css">
-        <link rel="stylesheet" href="resources/css/style.css">
-        <link rel="stylesheet" href="resources/css/queries.css">
-
-
-        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="resources/favicons/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="resources/favicons/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="resources/favicons/manifest.json">
-        <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
-        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    <body><!-- Header -->
-    <header>
-        <nav>
-            <div class="row">
-                <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
-                <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
-                <ul class="main-nav js--main-nav">
-                    <li><a href="#features">Food delivery</a></li>
-                    <li><a href="#works">How it works</a></li>
-                    <li><a href="#cities">Our cities</a></li>
-                    <li><a href="#plans">Sign up</a></li>
-                </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-            </div>
-        </nav>
-        <div class="hero-text-box">
-            <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-            <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
-            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
-        </div>
-    </header><!-- End Header -->
 
     <!-- Feature Section -->
     <section class="section-features js--section-features" id="features">
@@ -119,22 +66,22 @@ get_header();
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/3.jpg" alt="Chicken breast steak with vegetables">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/4.jpg" alt="Autumn pumpkin soup">
                 </figure>
             </li>
         </ul>
@@ -142,22 +89,22 @@ get_header();
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/5.jpg" alt="Paleo beef steak with vegetables">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/7.jpg" alt="Burger with cheddar and bacon">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
+                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/8.jpg" alt="Granola with cherries and strawberries">
                 </figure>
             </li>
         </ul>
@@ -171,7 +118,7 @@ get_header();
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -187,8 +134,8 @@ get_header();
                     <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
                 </div>
 
-                <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
-                <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"></a>
+                <a href="#" class="btn-app"><img src="<?php echo get_template_directory_uri(); ?>/resources/img/download-app.svg" alt="App Store Button"></a>
+                <a href="#" class="btn-app"><img src="<?php echo get_template_directory_uri(); ?>/resources/img/download-app-android.png" alt="Play Store Button"></a>
             </div>
         </div>
     </div>
@@ -202,7 +149,7 @@ get_header();
 
         <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
-                <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
+                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/lisbon-3.jpg" alt="Lisbon">
                 <h3>Lisbon</h3>
                 <div class="city-feature">
                     <i class="ion-person icon-small"></i>
@@ -219,7 +166,7 @@ get_header();
             </div>
 
             <div class="col span-1-of-4 box">
-                <img src="resources/img/san-francisco.jpg" alt="San Francisco">
+                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/san-francisco.jpg" alt="San Francisco">
                 <h3>San Francisco</h3>
                 <div class="city-feature">
                     <i class="ion-person icon-small"></i>
@@ -236,7 +183,7 @@ get_header();
             </div>
 
             <div class="col span-1-of-4 box">
-                <img src="resources/img/berlin.jpg" alt="Berlin">
+                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/berlin.jpg" alt="Berlin">
                 <h3>Berlin</h3>
                 <div class="city-feature">
                     <i class="ion-person icon-small"></i>
@@ -253,7 +200,7 @@ get_header();
             </div>
 
             <div class="col span-1-of-4 box">
-                <img src="resources/img/london.jpg" alt="London">
+                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/london.jpg" alt="London">
                 <h3>London</h3>
                 <div class="city-feature">
                     <i class="ion-person icon-small"></i>
@@ -282,19 +229,19 @@ get_header();
                 <blockquote>
                     Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
                 </blockquote>
-                <cite><img src="resources/img/customer-1.jpg">Alberto Duncan</cite>
+                <cite><img src="<?php echo get_template_directory_uri(); ?>/resources/img/customer-1.jpg">Alberto Duncan</cite>
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
                     Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
                 </blockquote>
-                <cite><img src="resources/img/customer-2.jpg">Joana Silva</cite>
+                <cite><img src="<?php echo get_template_directory_uri(); ?>/resources/img/customer-2.jpg">Joana Silva</cite>
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
                     I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
                 </blockquote>
-                <cite><img src="resources/img/customer-3.jpg">Milton Chapman</cite>
+                <cite><img src="<?php echo get_template_directory_uri(); ?>/resources/img/customer-3.jpg">Milton Chapman</cite>
             </div>
         </div>
     </section>
@@ -437,46 +384,5 @@ get_header();
             </form>
         </div>
     </section>
-
-    <footer>
-        <div class="row">
-            <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">iOS APP</a></li>
-                    <li><a href="#">Android APP</a></li>
-                </ul>
-            </div>
-            <div class="col span-1-of-2">
-                <div class="social-links">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <p>
-                Copyright &copy; 2015 by Omnifood. All rights reserved.
-            </p>
-        </div>
-    </footer>
-
-
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3"></script>
-    <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3,selectivizr@1.0.3b"></script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/index.js"></script>
-    </body>
-    </html>
-
-
 <?php
 get_footer();
