@@ -8,7 +8,9 @@
  *
  * @package omnifood
  */
-
+$omni_heading = get_field('omni_heading');
+$btn_hungry = get_field('btn_hungry');
+$btn_show_me = get_field('btn_show_me');
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -40,19 +42,22 @@
             <div class="row">
                 <img src="<?php echo get_template_directory_uri(); ?>/resources/img/logo-white.png" alt="Omnifood logo" class="logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/resources/img/logo.png" alt="Omnifood logo" class="logo-black">
-                <ul class="main-nav js--main-nav">
-                    <li><a href="#features">Food delivery</a></li>
-                    <li><a href="#works">How it works</a></li>
-                    <li><a href="#cities">Our cities</a></li>
-                    <li><a href="#plans">Sign up</a></li>
-                </ul>
+                <?php
+                    wp_nav_menu( array (
+                        'theme_location' => 'menu-1',
+                        'container'       => '',
+                        'container_class' => '',
+                        'container_id'    => '',
+                        'menu_class' => 'main-nav js--main-nav'
+                    ));
+                ?>
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-            <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
-            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+            <h1><?php echo $omni_heading; ?></h1>
+            <a class="btn btn-full js--scroll-to-plans" href="#"><?php echo $btn_hungry; ?></a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#"><?php echo $btn_show_me; ?></a>
         </div>
     </header><!-- # End Header -->
 
