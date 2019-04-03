@@ -11,7 +11,8 @@
  *
  * @package omnifood
  */
-
+$featured_heading = get_field('featured_heading');
+$featured_description = get_field('featured_description');
 get_header();
 ?>
 
@@ -19,9 +20,9 @@ get_header();
     <!-- Feature Section -->
     <section class="section-features js--section-features" id="features">
         <div class="row">
-            <h2>Get food fast &mdash; not fast food.</h2>
+            <h2><?php echo $featured_heading; ?></h2>
             <p class="long-copy">
-                Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+                <?php echo $featured_description; ?>
             </p>
         </div>
 
