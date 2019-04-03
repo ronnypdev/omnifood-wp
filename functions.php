@@ -97,6 +97,7 @@ function omnifood_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'omnifood_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'omnifood_content_width', 0 );
+add_filter('show_admin_bar', '__return_false');
 
 /**
  * Register widget area.
