@@ -21,54 +21,8 @@ get_header();
     <!-- # Feature Section -->
 
     <!-- Meals Section -->
-    <section class="section-meals">
-        <ul class="meals-showcase clearfix">
-            <li>
-                <figure class="meal-photo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                </figure>
-            </li>
-            <li>
-                <figure class="meal-photo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
-                </figure>
-            </li>
-            <li>
-                <figure class="meal-photo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/3.jpg" alt="Chicken breast steak with vegetables">
-                </figure>
-            </li>
-            <li>
-                <figure class="meal-photo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/4.jpg" alt="Autumn pumpkin soup">
-                </figure>
-            </li>
-        </ul>
-
-        <ul class="meals-showcase clearfix">
-            <li>
-                <figure class="meal-photo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/5.jpg" alt="Paleo beef steak with vegetables">
-                </figure>
-            </li>
-            <li>
-                <figure class="meal-photo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
-                </figure>
-            </li>
-            <li>
-                <figure class="meal-photo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/7.jpg" alt="Burger with cheddar and bacon">
-                </figure>
-            </li>
-            <li>
-                <figure class="meal-photo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/resources/img/8.jpg" alt="Granola with cherries and strawberries">
-                </figure>
-            </li>
-        </ul>
-    </section>
-    <!-- End Meals Section -->
+        <?php get_template_part('template-parts/content', 'meals'); ?>
+    <!-- # Meals Section -->
 
     <!-- Section Steps -->
     <div class="section-steps" id="works">
