@@ -157,6 +157,8 @@ function omnifood_styles() {
 
 add_action('wp_enqueue_scripts', 'omnifood_styles');
 
+add_image_size('small_icon', 172, 60, true);
+
 /**
  * Implement the Custom Header feature.
  */
