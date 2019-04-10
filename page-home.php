@@ -11,7 +11,6 @@
  *
  * @package omnifood
  */
-
 get_header();
 ?>
 
@@ -26,85 +25,11 @@ get_header();
 
     <!-- Section Steps -->
         <?php get_template_part('template-parts/content', 'sectionsteps'); ?>
-    <!-- End Section Steps -->
+    <!-- # Section Steps -->
 
     <!-- Cities Section  -->
-    <section class="sections-cities" id="cities">
-        <div class="row">
-            <h2>We're currently in these cities</h2>
-        </div>
-
-        <div class="row js--wp-3">
-            <div class="col span-1-of-4 box">
-                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/lisbon-3.jpg" alt="Lisbon">
-                <h3>Lisbon</h3>
-                <div class="city-feature">
-                    <i class="ion-person icon-small"></i>
-                    1600+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i>
-                    60+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_lx</a>
-                </div>
-            </div>
-
-            <div class="col span-1-of-4 box">
-                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/san-francisco.jpg" alt="San Francisco">
-                <h3>San Francisco</h3>
-                <div class="city-feature">
-                    <i class="ion-person icon-small"></i>
-                    3700+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i>
-                    160+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_sf</a>
-                </div>
-            </div>
-
-            <div class="col span-1-of-4 box">
-                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/berlin.jpg" alt="Berlin">
-                <h3>Berlin</h3>
-                <div class="city-feature">
-                    <i class="ion-person icon-small"></i>
-                    2300+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i>
-                    110+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_berlin</a>
-                </div>
-            </div>
-
-            <div class="col span-1-of-4 box">
-                <img src="<?php echo get_template_directory_uri(); ?>/resources/img/london.jpg" alt="London">
-                <h3>London</h3>
-                <div class="city-feature">
-                    <i class="ion-person icon-small"></i>
-                    1200+ happy eaters
-                </div>
-                <div class="city-feature">
-                    <i class="ion-ios-star icon-small"></i>
-                    50+ top chefs
-                </div>
-                <div class="city-feature">
-                    <i class="ion-social-twitter icon-small"></i>
-                    <a href="#">@omnifood_london</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Cities Section  -->
+        <?php get_template_part('template-parts/content', 'cities'); ?>
+    <!-- # Cities Section  -->
 
     <!-- Testimonials -->
     <section class="section-testimonials">
@@ -114,19 +39,23 @@ get_header();
         <div class="row">
             <div class="col span-1-of-3">
                 <blockquote>
-                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so
+                    Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
                 </blockquote>
                 <cite><img src="<?php echo get_template_directory_uri(); ?>/resources/img/customer-1.jpg">Alberto Duncan</cite>
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
-                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food
+                    delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
                 </blockquote>
-                <cite><img src="<?php echo get_template_directory_uri(); ?>/resources/img/customer-2.jpg">Joana Silva</cite>
+                <cite><img src="<?php echo get_template_directory_uri(); ?>/resources/img/customer-2.jpg">Joana
+                    Silva</cite>
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
-                    I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                    I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and
+                    ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
                 </blockquote>
                 <cite><img src="<?php echo get_template_directory_uri(); ?>/resources/img/customer-3.jpg">Milton Chapman</cite>
             </div>
