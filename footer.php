@@ -16,13 +16,15 @@
     <footer>
         <div class="row">
             <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">iOS APP</a></li>
-                    <li><a href="#">Android APP</a></li>
-                </ul>
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer-1',
+                        'container' => '',
+                        'container_class' => '',
+                        'container_id' => '',
+                        'menu_class' => 'footer-nav'
+                    ));
+                ?>
             </div>
             <div class="col span-1-of-2">
                 <div class="social-links">
